@@ -13,3 +13,17 @@
 
 
 /* Validation Styles */
+/* whenever a field is selected, it will change the background color */
+input:not([type='radio']):focus {
+    background-color: rgb(255, 218, 165);
+}
+
+/* Whenever a field is being focused on (selected), and is valid, it will have a green background, with a checkmark on the right */
+input:not([type='radio']):focus:valid {
+    background: rgb(215, 255, 215) url(sb_valid.png) right no-repeat;
+}
+
+/* Whenever a field is being focused on (selected), and is invalid, it will have a yellow-ish background, with an X on the right */
+input:not([type='radio']):focus:invalid {
+    background: rgb(255, 245, 215) url(sb_invalid.png) right no-repeat;
+}
